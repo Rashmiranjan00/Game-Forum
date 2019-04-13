@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:g_forum/pages/appBackground.dart';
-import 'package:g_forum/pages/horizontalTab.dart';
+import 'package:g_forum/common/appBackground.dart';
+import 'package:g_forum/common/horizontalTab.dart';
 
 class LandingPage extends StatelessWidget {
   @override

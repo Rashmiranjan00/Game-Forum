@@ -12,11 +12,14 @@ class TabText extends StatelessWidget {
   Widget build(BuildContext context) {
     return Transform.rotate(
       angle: -1.58,
-      child: InkWell(
-        onTap: onTabTap,
-        child: Text(
-          text,
-          style: isSelected ? selectedTabStyle : defaultTabStyle,
+      child: AnimatedDefaultTextStyle(
+        style: isSelected ? selectedTabStyle : defaultTabStyle,
+        duration: const Duration(milliseconds: 500),
+        child: InkWell(
+          onTap: onTabTap,
+          child: Text(
+            text,
+          ),
         ),
       ),
     );
